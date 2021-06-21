@@ -13,7 +13,7 @@ function App() {
 
   // read all todos
   useEffect(()=>{
-    axios.get('http://localhost:8000/api/todo')
+    axios.get('https://farm-stack-backend.herokuapp.com/')
       .then(res => {
         setTodoList(res.data)
       })
