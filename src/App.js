@@ -13,7 +13,7 @@ function App() {
 
   // read all todos
   useEffect(()=>{
-    axios.get('https://farm-stack-backend.herokuapp.com/')
+    axios.get('https://farm-stack-backend.herokuapp.com/api/todo')
       .then(res => {
         setTodoList(res.data)
       })
@@ -21,7 +21,7 @@ function App() {
 
   // posta todo
   const addTodoHandler = () => {
-    axios.post('https://farm-stack-backend.herokuapp.com/', {'title': title, 'description': desc})
+    axios.post('https://farm-stack-backend.herokuapp.com/api/todo', {'title': title, 'description': desc})
     .then(res => console.log(res))
   };
 
