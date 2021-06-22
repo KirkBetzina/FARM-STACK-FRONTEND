@@ -21,7 +21,7 @@ function App() {
 
   // posta todo
   const addTodoHandler = () => {
-    axios.post('http://localhost:8000/api/todo/', {'title': title, 'description': desc})
+    axios.post('https://farm-stack-backend.herokuapp.com/', {'title': title, 'description': desc})
     .then(res => console.log(res))
   };
 

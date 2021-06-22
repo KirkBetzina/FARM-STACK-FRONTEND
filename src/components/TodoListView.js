@@ -5,7 +5,7 @@ function TodoView(props) {
     return ( 
         <div>
             <ul>
-                {props.todoList.map((todo, idx) => <TodoItem todo ={todo} key ={idx}/>)}
+                {props.todoList.map((todo, idx) => <TodoItem todo ={todo} key={idx} />)}
                 
             </ul>
         </div>
