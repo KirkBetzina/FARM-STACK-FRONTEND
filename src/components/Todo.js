@@ -2,8 +2,8 @@ import axios from "axios";
 import React from "react";
 
 function TodoItem(props) {
-    const deleteTodoHandler = (title) =>{
-        axios.delete(`http://localhost:8000/api/todo/${title}`)
+    const deleteTodoHandler = (title) => {
+        axios.delete(`https://farm-stack-backend.herokuapp.com/${title}`)
             .then(res => console.log(res.data))}
         return(
             <div>

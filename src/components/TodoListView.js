@@ -1,12 +1,12 @@
 import TodoItem from "./Todo";
+import React from 'react'
 
 function TodoView(props) {
-    console.log('HEY OVER HERE', props)
     return ( 
         <div>
             <ul>
-                {props.todoList.map((todo, idx) => <TodoItem todo ={todo} key={idx} />)}
-                
+                {props.todoList.map((todo, index) => <TodoItem todo ={todo} key={index} />)}
+                {/* {props.todoList.map(todo => <TodoItem todo={todo} />)} */}
             </ul>
         </div>
     )
